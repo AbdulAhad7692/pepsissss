@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogger</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <nav>
+    <p class="nav-text">Doily Dose of Blog</p>
+    <div>
+      <button class="btn" onclick="signOut()" id="sign-out" role="button">Sign Out</button>
+    </div>
+  </nav>
+
+  <div class="add-blog-container">
+
+    <div class="blog-div">
+      <input type="text" class="input" id="blog-title-input" required placeholder="Enter your title">
+
+      <div class="blog-box" id="blog-box" contenteditable="true">
+        Add your blog here....
+      </div>
+
+      <button class="btn" id="publish-blog">Publish blog</button>
+    </div>
+  </div>
+  
+  <div class="container">
+    <ul id="list">
+
+    </ul>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
